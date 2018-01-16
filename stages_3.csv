@@ -1,0 +1,11 @@
+Stage ID,Stage Name,Parent IDs,Number of Tasks,Submission Time,Completion Time
+3,showString at NativeMethodAccessorImpl.java:-2,[],2,1481569687151,1481570865938
+5,showString at NativeMethodAccessorImpl.java:-2,[],2,1481569687158,1481570866594
+7,showString at NativeMethodAccessorImpl.java:-2,[],2,1481569687199,1481570866811
+1,showString at NativeMethodAccessorImpl.java:-2,[],2,1481569687144,1481570874323
+0,showString at NativeMethodAccessorImpl.java:-2,[],288,1481569687110,1481570889696
+2,showString at NativeMethodAccessorImpl.java:-2,"[0, 1]",200,1481570891234,1481571968305
+4,showString at NativeMethodAccessorImpl.java:-2,"[2, 3]",200,1481571968651,1481572010108
+6,showString at NativeMethodAccessorImpl.java:-2,"[5, 4]",200,1481572010182,1481572154659
+8,showString at NativeMethodAccessorImpl.java:-2,"[6, 7]",200,1481572154737,1481572342797
+9,showString at NativeMethodAccessorImpl.java:-2,[8],200,1481572342869,1481572353858

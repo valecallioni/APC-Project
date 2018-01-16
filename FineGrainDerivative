@@ -1,0 +1,47 @@
+#include "FineGrainDerivative.hpp"
+
+void FineGrainDerivative::set_weights(Process &process)
+{
+  for (unsigned int k=0; k<process.size(); k++)
+    weights.push_back(process[k]->get_weight()/(process[k]->get_alpha()/double(process[k]->get_n_core()*(process[k]->get_n_core()-1))));
+
+  std::sort(weights.begin(), weights.end());
+  std::reverse(weights.begin(), weights.end());
+}
+
+void FineGrainDerivative::find_min(Process &process)
+{
+  unsigned int it = 0;
+  unsigned int max_it = 10;
+  if (process.total_real_time() < process.get_d()){
+    for (auto w:weights){
+      for (unsigned int k=0; k<process.size(); k++){
+        if (process[k]->get_weight()/(process[k]->get_alpha()/double(process[k]->get_n_core()*(process[k]->get_n_core()-1)))==w){
+          unsigned int u=0;
+          while (process.total_real_time() < process.get_d()){
+            process[k]->set_n_core(process[k]->get_n_core()-1);
+            u++;
+          }
+          if(u>0)
+            process[k]->set_n_core(process[k]->get_n_core()+1);
+        }
+        set_weights(process);
+      }
+    }
+  }
+
+  else {
+    for (unsigned int k=0; k<process.size(); k++){
+      if (process[k]->get_weight()/(process[k]->get_alpha()/double(process[k]->get_n_core()*(process[k]->get_n_core()-1)))==weights.back()){
+        while (process.total_real_time() >= process.get_d() && it<=max_it){
+          process[k]->set_n_core(process[k]->get_n_core()+1);
+          it++;
+        }
+      }
+      set_weights(process);
+    }
+    if (it==max_it+1)
+      std::cout << "While loop ended, reached max number of iterations" << std::endl;
+  }
+
+}

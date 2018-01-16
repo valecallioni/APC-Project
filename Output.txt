@@ -1,0 +1,698 @@
+The given problem has as minimum deadline 657423 milliseconds. 
+ 
+Application application_1481182872654_0046 will be considered as Application 1
+Application application_1481182872654_0026 will be considered as Application 2
+Application app-20161212200739-0001 will be considered as Application 3
+Application 90d05655-6af4-47e7-bf7e-08fcd1ad9aef-0298 will be considered as Application 4
+Application app-20161216081231-0001 will be considered as Application 5
+
+Application 1 used 6 cores and the initial deadline is 247516 that requires 63 nr. of cores.
+Application 2 used 6 cores and the initial deadline is 254512 that requires 71 nr. of cores.
+Application 3 used 20 cores and the initial deadline is 488430 that requires 162 nr. of cores.
+Application 4 used 20 cores and the initial deadline is 3793 that requires 38 nr. of cores.
+Application 5 used 20 cores and the initial deadline is 320592 that requires 4294964973 nr. of cores.
+
+Now the coarse grain method begins. Given a delta, we want to select the application that 
+ provides the minimum cost if we add cores and the one that 
+ provides the maximum saving if we remove cores. 
+ 
+Using delta = 13148 application 4 implies a saving of 4.29496e+08; 
+application 4 implies a saving of 3.43597e+08.
+Old total cost 4.29497e+08
+New total cost 247.93
+Since the new cost is less than the old one, we proceed with the delta method, considering every time half of the previous delta. 
+ 
+Using delta = 6574 application 4 implies a saving of 106.1; 
+while application 4 implies a saving of 3.43597e+08.
+Old total cost 247.93
+New total cost 142.07
+ 
+Using delta = 3287 application 4 implies a saving of 21.7; 
+while application 4 implies a saving of 3.86547e+08.
+Old total cost 142.07
+New total cost 120.46
+ 
+Using delta = 1643 application 4 implies a saving of 8; 
+while application 4 implies a saving of 3.43597e+08.
+Old total cost 120.46
+New total cost 112.54
+ 
+Using delta = 821 application 4 implies a saving of 3.4; 
+while application 4 implies a saving of 3.43597e+08.
+Old total cost 112.54
+New total cost 109.14
+ 
+Using delta = 410 application 4 implies a saving of 1.6; 
+while application 4 implies a saving of 0.
+Old total cost 109.14
+New total cost 107.54
+ 
+Using delta = 205 application 4 implies a saving of 0.8; 
+while application 4 implies a saving of 0.
+Old total cost 107.54
+New total cost 106.74
+ 
+Using delta = 102 application 4 implies a saving of 0.4; 
+while application 4 implies a saving of 0.
+Old total cost 106.74
+New total cost 106.34
+ 
+Using delta = 51 application 4 implies a saving of 0.2; 
+while application 4 implies a saving of 0.
+Old total cost 106.34
+New total cost 106.14
+ 
+Using delta = 25 application 4 implies a saving of 0.1; 
+while application 4 implies a saving of 0.
+Old total cost 106.14
+New total cost 106.04
+ 
+Using delta = 12 application 0 implies a saving of 0; 
+while application 0 implies a saving of 0.
+Old total cost 106.04
+New total cost 106.04
+ 
+After coarse grain method the total cost is 106.04
+ 
+Total deadline: 1314846 and total_real_time: 1039343
+Application 1 nr. of cores: 72
+Application 2 nr. of cores: 72
+Application 3 nr. of cores: 162
+Application 4 nr. of cores: 38
+Application 5 nr. of cores: 738
+
+Now we start the fine grain search with the weights method. 
+ 
+Descending order of applications considering their weights 
+[3] [4] [5] [3] [4] [5] [3] [4] [5] [2] [1] 
+ 
+Application 3 nr. of cores: 161
+Application 3 nr. of cores: 160
+Application 3 nr. of cores: 159
+Application 3 nr. of cores: 158
+Application 3 nr. of cores: 157
+Application 3 nr. of cores: 156
+Application 3 nr. of cores: 155
+Application 3 nr. of cores: 154
+Application 3 nr. of cores: 153
+Application 3 nr. of cores: 152
+Application 3 nr. of cores: 151
+Application 3 nr. of cores: 150
+Application 3 nr. of cores: 149
+Application 3 nr. of cores: 148
+Application 3 nr. of cores: 147
+Application 3 nr. of cores: 146
+Application 3 nr. of cores: 145
+Application 3 nr. of cores: 144
+Application 3 nr. of cores: 143
+Application 3 nr. of cores: 142
+Application 3 nr. of cores: 141
+Application 3 nr. of cores: 140
+Application 3 nr. of cores: 139
+Application 3 nr. of cores: 138
+Application 3 nr. of cores: 137
+Application 3 nr. of cores: 136
+Application 3 nr. of cores: 135
+Application 3 nr. of cores: 134
+Application 3 nr. of cores: 133
+Application 3 nr. of cores: 132
+Application 3 nr. of cores: 131
+Application 3 nr. of cores: 130
+Application 3 nr. of cores: 129
+Application 3 nr. of cores: 128
+Application 3 nr. of cores: 127
+Application 3 nr. of cores: 126
+Application 3 nr. of cores: 125
+Application 3 nr. of cores: 124
+Application 3 nr. of cores: 123
+Application 3 nr. of cores: 122
+Application 3 nr. of cores: 121
+Application 3 nr. of cores: 120
+Application 3 nr. of cores: 119
+Application 3 nr. of cores: 118
+Application 3 nr. of cores: 117
+Application 3 nr. of cores: 116
+Application 3 nr. of cores: 115
+Application 3 nr. of cores: 114
+Application 3 nr. of cores: 113
+Application 3 nr. of cores: 112
+Application 3 nr. of cores: 111
+Application 3 nr. of cores: 110
+Application 3 nr. of cores: 109
+Application 3 nr. of cores: 108
+Application 3 nr. of cores: 107
+Application 3 nr. of cores: 106
+Application 3 nr. of cores: 105
+Application 3 nr. of cores: 104
+Application 3 nr. of cores: 103
+Application 3 nr. of cores: 102
+Application 3 nr. of cores: 101
+Application 3 nr. of cores: 100
+Application 3 nr. of cores: 99
+Application 3 nr. of cores: 98
+Application 3 nr. of cores: 97
+Application 3 nr. of cores: 96
+Application 3 nr. of cores: 95
+Application 3 nr. of cores: 94
+Application 3 nr. of cores: 93
+Application 3 nr. of cores: 92
+Application 3 nr. of cores: 91
+Application 3 nr. of cores: 90
+Application 3 nr. of cores: 89
+Application 3 nr. of cores: 88
+Application 3 nr. of cores: 87
+Application 3 nr. of cores: 86
+Application 3 nr. of cores: 85
+Application 3 nr. of cores: 84
+Application 3 nr. of cores: 83
+Application 3 nr. of cores: 82
+Application 3 nr. of cores: 81
+Application 3 nr. of cores: 80
+Application 3 nr. of cores: 79
+Application 3 nr. of cores: 78
+Application 3 nr. of cores: 77
+Application 3 nr. of cores: 76
+Application 3 nr. of cores: 75
+Application 3 nr. of cores: 74
+Application 3 nr. of cores: 73
+Application 3 nr. of cores: 72
+Application 3 nr. of cores: 71
+Application 3 nr. of cores: 70
+Application 3 nr. of cores: 69
+Application 3 nr. of cores: 68
+Application 3 nr. of cores: 67
+Application 3 nr. of cores: 66
+Application 3 nr. of cores: 65
+Application 3 nr. of cores: 64
+Application 3 nr. of cores: 63
+Application 3 nr. of cores: 62
+Application 3 nr. of cores: 61
+Application 3 nr. of cores: 60
+Application 3 nr. of cores: 59
+Application 3 nr. of cores: 58
+Application 3 nr. of cores: 57
+Application 4 nr. of cores: 37
+Application 4 nr. of cores: 36
+Application 4 nr. of cores: 35
+Application 4 nr. of cores: 34
+Application 4 nr. of cores: 33
+Application 4 nr. of cores: 32
+Application 4 nr. of cores: 31
+Application 4 nr. of cores: 30
+Application 4 nr. of cores: 29
+Application 4 nr. of cores: 28
+Application 4 nr. of cores: 27
+Application 4 nr. of cores: 26
+Application 4 nr. of cores: 25
+Application 4 nr. of cores: 24
+Application 4 nr. of cores: 23
+Application 4 nr. of cores: 22
+Application 4 nr. of cores: 21
+Application 4 nr. of cores: 20
+Application 4 nr. of cores: 19
+Application 4 nr. of cores: 18
+Application 4 nr. of cores: 17
+Application 4 nr. of cores: 16
+Application 4 nr. of cores: 15
+Application 4 nr. of cores: 14
+Application 4 nr. of cores: 13
+Application 4 nr. of cores: 12
+Application 4 nr. of cores: 11
+Application 4 nr. of cores: 10
+Application 4 nr. of cores: 9
+Application 4 nr. of cores: 8
+Application 4 nr. of cores: 7
+Application 4 nr. of cores: 6
+Application 4 nr. of cores: 5
+Application 5 nr. of cores: 737
+Application 5 nr. of cores: 736
+Application 5 nr. of cores: 735
+Application 5 nr. of cores: 734
+Application 5 nr. of cores: 733
+Application 5 nr. of cores: 732
+Application 5 nr. of cores: 731
+Application 5 nr. of cores: 730
+Application 5 nr. of cores: 729
+Application 5 nr. of cores: 728
+Application 5 nr. of cores: 727
+Application 5 nr. of cores: 726
+Application 5 nr. of cores: 725
+Application 5 nr. of cores: 724
+Application 5 nr. of cores: 723
+Application 5 nr. of cores: 722
+Application 5 nr. of cores: 721
+Application 5 nr. of cores: 720
+Application 5 nr. of cores: 719
+Application 5 nr. of cores: 718
+Application 5 nr. of cores: 717
+Application 5 nr. of cores: 716
+Application 5 nr. of cores: 715
+Application 5 nr. of cores: 714
+Application 5 nr. of cores: 713
+Application 5 nr. of cores: 712
+Application 5 nr. of cores: 711
+Application 5 nr. of cores: 710
+Application 5 nr. of cores: 709
+Application 5 nr. of cores: 708
+Application 5 nr. of cores: 707
+Application 5 nr. of cores: 706
+Application 5 nr. of cores: 705
+Application 5 nr. of cores: 704
+Application 5 nr. of cores: 703
+Application 5 nr. of cores: 702
+Application 5 nr. of cores: 701
+Application 5 nr. of cores: 700
+Application 5 nr. of cores: 699
+Application 5 nr. of cores: 698
+Application 5 nr. of cores: 697
+Application 5 nr. of cores: 696
+Application 5 nr. of cores: 695
+Application 5 nr. of cores: 694
+Application 5 nr. of cores: 693
+Application 5 nr. of cores: 692
+Application 5 nr. of cores: 691
+Application 5 nr. of cores: 690
+Application 5 nr. of cores: 689
+Application 5 nr. of cores: 688
+Application 5 nr. of cores: 687
+Application 5 nr. of cores: 686
+Application 5 nr. of cores: 685
+Application 5 nr. of cores: 684
+Application 5 nr. of cores: 683
+Application 5 nr. of cores: 682
+Application 5 nr. of cores: 681
+Application 5 nr. of cores: 680
+Application 5 nr. of cores: 679
+Application 5 nr. of cores: 678
+Application 5 nr. of cores: 677
+Application 5 nr. of cores: 676
+Application 5 nr. of cores: 675
+Application 5 nr. of cores: 674
+Application 5 nr. of cores: 673
+Application 5 nr. of cores: 672
+Application 5 nr. of cores: 671
+Application 5 nr. of cores: 670
+Application 5 nr. of cores: 669
+Application 5 nr. of cores: 668
+Application 5 nr. of cores: 667
+Application 5 nr. of cores: 666
+Application 5 nr. of cores: 665
+Application 5 nr. of cores: 664
+Application 5 nr. of cores: 663
+Application 5 nr. of cores: 662
+Application 5 nr. of cores: 661
+Application 5 nr. of cores: 660
+Application 5 nr. of cores: 659
+Application 5 nr. of cores: 658
+Application 5 nr. of cores: 657
+Application 5 nr. of cores: 656
+Application 5 nr. of cores: 655
+Application 5 nr. of cores: 654
+Application 5 nr. of cores: 653
+Application 5 nr. of cores: 652
+Application 5 nr. of cores: 651
+Application 5 nr. of cores: 650
+Application 5 nr. of cores: 649
+Application 5 nr. of cores: 648
+Application 5 nr. of cores: 647
+Application 5 nr. of cores: 646
+Application 5 nr. of cores: 645
+Application 5 nr. of cores: 644
+Application 5 nr. of cores: 643
+Application 5 nr. of cores: 642
+Application 5 nr. of cores: 641
+Application 5 nr. of cores: 640
+Application 5 nr. of cores: 639
+Application 5 nr. of cores: 638
+Application 5 nr. of cores: 637
+Application 5 nr. of cores: 636
+Application 5 nr. of cores: 635
+Application 5 nr. of cores: 634
+Application 5 nr. of cores: 633
+Application 5 nr. of cores: 632
+Application 5 nr. of cores: 631
+Application 5 nr. of cores: 630
+Application 5 nr. of cores: 629
+Application 5 nr. of cores: 628
+Application 5 nr. of cores: 627
+Application 5 nr. of cores: 626
+Application 5 nr. of cores: 625
+Application 5 nr. of cores: 624
+Application 5 nr. of cores: 623
+Application 5 nr. of cores: 622
+Application 5 nr. of cores: 621
+Application 5 nr. of cores: 620
+Application 5 nr. of cores: 619
+Application 5 nr. of cores: 618
+Application 5 nr. of cores: 617
+Application 5 nr. of cores: 616
+Application 5 nr. of cores: 615
+Application 5 nr. of cores: 614
+Application 5 nr. of cores: 613
+Application 5 nr. of cores: 612
+Application 5 nr. of cores: 611
+Application 5 nr. of cores: 610
+Application 5 nr. of cores: 609
+Application 5 nr. of cores: 608
+Application 5 nr. of cores: 607
+Application 5 nr. of cores: 606
+Application 5 nr. of cores: 605
+Application 5 nr. of cores: 604
+Application 5 nr. of cores: 603
+Application 5 nr. of cores: 602
+Application 5 nr. of cores: 601
+Application 5 nr. of cores: 600
+Application 5 nr. of cores: 599
+Application 5 nr. of cores: 598
+Application 5 nr. of cores: 597
+Application 5 nr. of cores: 596
+Application 5 nr. of cores: 595
+Application 5 nr. of cores: 594
+Application 5 nr. of cores: 593
+Application 5 nr. of cores: 592
+Application 5 nr. of cores: 591
+Application 5 nr. of cores: 590
+Application 5 nr. of cores: 589
+Application 5 nr. of cores: 588
+Application 5 nr. of cores: 587
+Application 5 nr. of cores: 586
+Application 5 nr. of cores: 585
+Application 5 nr. of cores: 584
+Application 5 nr. of cores: 583
+Application 5 nr. of cores: 582
+Application 5 nr. of cores: 581
+Application 5 nr. of cores: 580
+Application 5 nr. of cores: 579
+Application 5 nr. of cores: 578
+Application 5 nr. of cores: 577
+Application 5 nr. of cores: 576
+Application 5 nr. of cores: 575
+Application 5 nr. of cores: 574
+Application 5 nr. of cores: 573
+Application 5 nr. of cores: 572
+Application 5 nr. of cores: 571
+Application 5 nr. of cores: 570
+Application 5 nr. of cores: 569
+Application 5 nr. of cores: 568
+Application 5 nr. of cores: 567
+Application 5 nr. of cores: 566
+Application 5 nr. of cores: 565
+Application 5 nr. of cores: 564
+Application 5 nr. of cores: 563
+Application 5 nr. of cores: 562
+Application 5 nr. of cores: 561
+Application 5 nr. of cores: 560
+Application 5 nr. of cores: 559
+Application 5 nr. of cores: 558
+Application 5 nr. of cores: 557
+Application 5 nr. of cores: 556
+Application 5 nr. of cores: 555
+Application 5 nr. of cores: 554
+Application 5 nr. of cores: 553
+Application 5 nr. of cores: 552
+Application 5 nr. of cores: 551
+Application 5 nr. of cores: 550
+Application 5 nr. of cores: 549
+Application 5 nr. of cores: 548
+Application 5 nr. of cores: 547
+Application 5 nr. of cores: 546
+Application 5 nr. of cores: 545
+Application 5 nr. of cores: 544
+Application 5 nr. of cores: 543
+Application 5 nr. of cores: 542
+Application 5 nr. of cores: 541
+Application 5 nr. of cores: 540
+Application 5 nr. of cores: 539
+Application 5 nr. of cores: 538
+Application 5 nr. of cores: 537
+Application 5 nr. of cores: 536
+Application 5 nr. of cores: 535
+Application 5 nr. of cores: 534
+Application 5 nr. of cores: 533
+Application 5 nr. of cores: 532
+Application 5 nr. of cores: 531
+Application 5 nr. of cores: 530
+Application 5 nr. of cores: 529
+Application 5 nr. of cores: 528
+Application 5 nr. of cores: 527
+Application 5 nr. of cores: 526
+Application 5 nr. of cores: 525
+Application 5 nr. of cores: 524
+Application 5 nr. of cores: 523
+Application 5 nr. of cores: 522
+Application 5 nr. of cores: 521
+Application 5 nr. of cores: 520
+Application 5 nr. of cores: 519
+Application 5 nr. of cores: 518
+Application 5 nr. of cores: 517
+Application 5 nr. of cores: 516
+Application 5 nr. of cores: 515
+Application 5 nr. of cores: 514
+Application 5 nr. of cores: 513
+Application 5 nr. of cores: 512
+Application 5 nr. of cores: 511
+Application 5 nr. of cores: 510
+Application 5 nr. of cores: 509
+Application 5 nr. of cores: 508
+Application 5 nr. of cores: 507
+Application 5 nr. of cores: 506
+Application 5 nr. of cores: 505
+Application 5 nr. of cores: 504
+Application 5 nr. of cores: 503
+Application 5 nr. of cores: 502
+Application 5 nr. of cores: 501
+Application 5 nr. of cores: 500
+Application 5 nr. of cores: 499
+Application 5 nr. of cores: 498
+Application 5 nr. of cores: 497
+Application 5 nr. of cores: 496
+Application 5 nr. of cores: 495
+Application 5 nr. of cores: 494
+Application 5 nr. of cores: 493
+Application 5 nr. of cores: 492
+Application 5 nr. of cores: 491
+Application 5 nr. of cores: 490
+Application 5 nr. of cores: 489
+Application 5 nr. of cores: 488
+Application 5 nr. of cores: 487
+Application 5 nr. of cores: 486
+Application 5 nr. of cores: 485
+Application 5 nr. of cores: 484
+Application 5 nr. of cores: 483
+Application 5 nr. of cores: 482
+Application 5 nr. of cores: 481
+Application 5 nr. of cores: 480
+Application 5 nr. of cores: 479
+Application 5 nr. of cores: 478
+Application 5 nr. of cores: 477
+Application 5 nr. of cores: 476
+Application 5 nr. of cores: 475
+Application 5 nr. of cores: 474
+Application 5 nr. of cores: 473
+Application 5 nr. of cores: 472
+Application 5 nr. of cores: 471
+Application 5 nr. of cores: 470
+Application 5 nr. of cores: 469
+Application 5 nr. of cores: 468
+Application 5 nr. of cores: 467
+Application 5 nr. of cores: 466
+Application 5 nr. of cores: 465
+Application 5 nr. of cores: 464
+Application 5 nr. of cores: 463
+Application 5 nr. of cores: 462
+Application 5 nr. of cores: 461
+Application 5 nr. of cores: 460
+Application 5 nr. of cores: 459
+Application 5 nr. of cores: 458
+Application 5 nr. of cores: 457
+Application 5 nr. of cores: 456
+Application 5 nr. of cores: 455
+Application 5 nr. of cores: 454
+Application 5 nr. of cores: 453
+Application 5 nr. of cores: 452
+Application 5 nr. of cores: 451
+Application 5 nr. of cores: 450
+Application 5 nr. of cores: 449
+Application 5 nr. of cores: 448
+Application 5 nr. of cores: 447
+Application 5 nr. of cores: 446
+Application 5 nr. of cores: 445
+Application 5 nr. of cores: 444
+Application 5 nr. of cores: 443
+Application 5 nr. of cores: 442
+Application 5 nr. of cores: 441
+Application 5 nr. of cores: 440
+Application 5 nr. of cores: 439
+Application 5 nr. of cores: 438
+Application 5 nr. of cores: 437
+Application 5 nr. of cores: 436
+Application 5 nr. of cores: 435
+Application 5 nr. of cores: 434
+Application 5 nr. of cores: 433
+Application 5 nr. of cores: 432
+Application 5 nr. of cores: 431
+Application 5 nr. of cores: 430
+Application 5 nr. of cores: 429
+Application 5 nr. of cores: 428
+Application 5 nr. of cores: 427
+Application 5 nr. of cores: 426
+Application 5 nr. of cores: 425
+Application 5 nr. of cores: 424
+Application 5 nr. of cores: 423
+Application 5 nr. of cores: 422
+Application 5 nr. of cores: 421
+Application 5 nr. of cores: 420
+Application 5 nr. of cores: 419
+Application 5 nr. of cores: 418
+Application 5 nr. of cores: 417
+Application 5 nr. of cores: 416
+Application 5 nr. of cores: 415
+Application 5 nr. of cores: 414
+Application 5 nr. of cores: 413
+Application 5 nr. of cores: 412
+Application 5 nr. of cores: 411
+Application 5 nr. of cores: 410
+Application 5 nr. of cores: 409
+Application 5 nr. of cores: 408
+Application 5 nr. of cores: 407
+Application 5 nr. of cores: 406
+Application 5 nr. of cores: 405
+Application 5 nr. of cores: 404
+Application 5 nr. of cores: 403
+Application 5 nr. of cores: 402
+Application 5 nr. of cores: 401
+Application 5 nr. of cores: 400
+Application 5 nr. of cores: 399
+Application 5 nr. of cores: 398
+Application 5 nr. of cores: 397
+Application 5 nr. of cores: 396
+Application 5 nr. of cores: 395
+Application 5 nr. of cores: 394
+Application 5 nr. of cores: 393
+Application 5 nr. of cores: 392
+Application 5 nr. of cores: 391
+Application 5 nr. of cores: 390
+Application 5 nr. of cores: 389
+Application 5 nr. of cores: 388
+Application 5 nr. of cores: 387
+Application 5 nr. of cores: 386
+Application 5 nr. of cores: 385
+Application 5 nr. of cores: 384
+Application 5 nr. of cores: 383
+Application 5 nr. of cores: 382
+Application 5 nr. of cores: 381
+Application 5 nr. of cores: 380
+Application 5 nr. of cores: 379
+Application 5 nr. of cores: 378
+Application 5 nr. of cores: 377
+Application 5 nr. of cores: 376
+Application 5 nr. of cores: 375
+Application 5 nr. of cores: 374
+Application 5 nr. of cores: 373
+Application 5 nr. of cores: 372
+Application 5 nr. of cores: 371
+Application 5 nr. of cores: 370
+Application 5 nr. of cores: 369
+Application 5 nr. of cores: 368
+Application 5 nr. of cores: 367
+Application 5 nr. of cores: 366
+Application 5 nr. of cores: 365
+Application 5 nr. of cores: 364
+Application 5 nr. of cores: 363
+Application 5 nr. of cores: 362
+Application 5 nr. of cores: 361
+Application 5 nr. of cores: 360
+Application 5 nr. of cores: 359
+Application 5 nr. of cores: 358
+Application 5 nr. of cores: 357
+Application 5 nr. of cores: 356
+Application 5 nr. of cores: 355
+Application 5 nr. of cores: 354
+Application 5 nr. of cores: 353
+Application 5 nr. of cores: 352
+Application 5 nr. of cores: 351
+Application 5 nr. of cores: 350
+Application 5 nr. of cores: 349
+Application 5 nr. of cores: 348
+Application 5 nr. of cores: 347
+Application 5 nr. of cores: 346
+Application 5 nr. of cores: 345
+Application 5 nr. of cores: 344
+Application 5 nr. of cores: 343
+Application 5 nr. of cores: 342
+Application 5 nr. of cores: 341
+Application 5 nr. of cores: 340
+Application 5 nr. of cores: 339
+Application 5 nr. of cores: 338
+Application 5 nr. of cores: 337
+Application 5 nr. of cores: 336
+Application 5 nr. of cores: 335
+Application 5 nr. of cores: 334
+Application 5 nr. of cores: 333
+Application 5 nr. of cores: 332
+Application 5 nr. of cores: 331
+Application 5 nr. of cores: 330
+Application 5 nr. of cores: 329
+Application 5 nr. of cores: 328
+Application 5 nr. of cores: 327
+Application 5 nr. of cores: 326
+Application 5 nr. of cores: 325
+Application 5 nr. of cores: 324
+Application 5 nr. of cores: 323
+Application 5 nr. of cores: 322
+Application 5 nr. of cores: 321
+Application 5 nr. of cores: 320
+Application 5 nr. of cores: 319
+Application 5 nr. of cores: 318
+Application 5 nr. of cores: 317
+Application 5 nr. of cores: 316
+Application 5 nr. of cores: 315
+Application 5 nr. of cores: 314
+Application 5 nr. of cores: 313
+Application 5 nr. of cores: 312
+Application 5 nr. of cores: 311
+Application 5 nr. of cores: 310
+Application 5 nr. of cores: 309
+Application 5 nr. of cores: 308
+Application 5 nr. of cores: 307
+Application 5 nr. of cores: 306
+Application 5 nr. of cores: 305
+Application 5 nr. of cores: 304
+Application 5 nr. of cores: 303
+Application 5 nr. of cores: 302
+Application 5 nr. of cores: 301
+Application 5 nr. of cores: 300
+Application 5 nr. of cores: 299
+Application 5 nr. of cores: 298
+Application 5 nr. of cores: 297
+Application 5 nr. of cores: 296
+Application 5 nr. of cores: 295
+Application 5 nr. of cores: 294
+Application 5 nr. of cores: 293
+Application 5 nr. of cores: 292
+Application 5 nr. of cores: 291
+Application 5 nr. of cores: 290
+Application 5 nr. of cores: 289
+Application 5 nr. of cores: 288
+Application 5 nr. of cores: 287
+Application 3 nr. of cores: 57
+Application 4 nr. of cores: 5
+Application 5 nr. of cores: 287
+Application 3 nr. of cores: 57
+Application 4 nr. of cores: 5
+Application 5 nr. of cores: 287
+Application 2 nr. of cores: 71
+Application 1 nr. of cores: 71
+
+ 
+Finished computation at Mon Mar  6 09:51:43 2017
+ elapsed time: 0.00770121 s
+
+Final results: 
+Application 1 requires 72 nr. of cores.
+Application 2 requires 72 nr. of cores.
+Application 3 requires 58 nr. of cores.
+Application 4 requires 6 nr. of cores.
+Application 5 requires 288 nr. of cores.
+The final total cost is 47.44
+Deadline: 1314846 and total_real_time: 1304112
